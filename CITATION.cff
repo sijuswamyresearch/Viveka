@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use Viveka in your research, please cite the following paper."
+authors:
+  - family-names: "K S"
+    given-names: "Siju"
+title: "Viveka: A Reference-Free Test-Time Refinement Framework for Clinical Fidelity in Deep X-Ray Denoising"
+version: 1.0.0
+date-released: 2026
+url: "https://github.com/sijuswamyresearch/Viveka"
