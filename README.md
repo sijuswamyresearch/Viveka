@@ -208,7 +208,7 @@ pytest tests/
 ```bibtex
 @article{viveka2026,
   title={Viveka: A Reference-Free Test-Time Refinement Framework for Clinical Fidelity in Deep X-Ray Denoising},
-  author={Siju K S},
+  author={Siju K S., Vipin Venugopal, Mithun Kumar Kar.},
   journal={Computer methods and programs in biomedicine},
   year={2026}
 }
