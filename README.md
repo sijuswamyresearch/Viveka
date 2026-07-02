@@ -1,4 +1,4 @@
-# PAR: Test-Time Refinement for Chest X-Ray Denoising
+# PAR: Physics-Aware Test-Time Refinement for Chest X-Ray Denoising
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
@@ -7,7 +7,7 @@
 **Reference-free post-processing module for correcting residual artefacts in denoised chest X-rays using physics-based constraints.**
 
 
-PAR operates on the output of any pre-trained denoiser without requiring access to its architecture, retraining, or clean ground truth images.
+PAR framework operates on the output of any pre-trained denoiser without requiring access to its architecture, retraining, or clean ground truth images.
 
 ## File Structure
 
@@ -116,7 +116,7 @@ refined = refiner.refine(denoised, noisy, model_type='X-GAN')
 
 ## How It Works
 
-Viveka constructs a spatially varying weight map that determines where and how strongly a DCT-extracted detail signal is added back to the base denoiser output. The weight map combines:
+PAR constructs a spatially varying weight map that determines where and how strongly a DCT-extracted detail signal is added back to the base denoiser output. The weight map combines:
 
 * **DCT Detail Extraction** — Frequency-domain filtering in the Anscombe-transformed domain with physics-informed thresholds
 * **Anatomical Zone Decomposition** — Bone (Canny edges), lung, and background regions
@@ -215,8 +215,8 @@ pytest tests/
 ## Citation
 
 ```bibtex
-@article{viveka2026,
-  title={Viveka: A Reference-Free Test-Time Refinement Framework for Clinical Fidelity in Deep X-Ray Denoising},
+@article{PAR2026,
+  title={PAR: A Reference-Free Test-Time Refinement Framework for Clinical Fidelity in Deep X-Ray Denoising},
   author={Siju K S., Vipin Venugopal, Mithun Kumar Kar.},
   journal={Computer methods and programs in biomedicine},
   year={2026}
