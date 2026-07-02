@@ -9,6 +9,8 @@
 
 PAR framework operates on the output of any pre-trained denoiser without requiring access to its architecture, retraining, or clean ground truth images.
 
+>**Note:** The Physics Aware Refiner framework is originally developed with the name Viveka.
+
 ## File Structure
 
 ```bash
