@@ -1,22 +1,23 @@
-# Viveka: Test-Time Refinement for Chest X-Ray Denoising
+# PAR: Test-Time Refinement for Chest X-Ray Denoising
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Live Demo](https://img.shields.io/badge/Demo-Live-green.svg)](https://viveka-module.streamlit.app/)
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green.svg)](https://par-module.streamlit.app/)
 
 **Reference-free post-processing module for correcting residual artefacts in denoised chest X-rays using physics-based constraints.**
 
 
-Viveka operates on the output of any pre-trained denoiser without requiring access to its architecture, retraining, or clean ground truth images.
+PAR operates on the output of any pre-trained denoiser without requiring access to its architecture, retraining, or clean ground truth images.
 
 ## File Structure
 
 ```bash
-viveka/
+Viveka/
 ├── README.md
 ├── LICENSE
 ├── CITATION.cff
 ├── requirements.txt
+├── setup.py
 ├── .gitignore
 ├── viveka/
 │   ├── __init__.py
@@ -36,10 +37,18 @@ viveka/
 
 ## Installation
 
+### From GitHub
+
 ```bash
-git clone [https://github.com/sijuswamyresearch/Viveka.git](https://github.com/sijuswamyresearch/Viveka.git)
+pip install git+https://github.com/sijuswamyresearch/Viveka.git
+```
+
+### From Local Clone
+
+```bash
+git clone https://github.com/sijuswamyresearch/Viveka.git
 cd Viveka
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ### Requirements
@@ -55,9 +64,9 @@ pip install -r requirements.txt
   <img src="viveka-banner.png" alt="Viveka Demo" width="800"/>
 </p>
 
-Try Viveka directly in your browser:
+Try PAR directly in your browser:
 
-👉 **[viveka-module.streamlit.app](https://viveka-module.streamlit.app/)**
+👉 **[viveka-module.streamlit.app](https://par-module.streamlit.app/)**
 
 **Features:**
 
